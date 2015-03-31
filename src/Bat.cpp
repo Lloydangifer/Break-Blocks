@@ -2,8 +2,8 @@
 
 Bat::Bat(){
     m_rs = RectangleShape(Vector2f(100,20));
-    m_rs.setFillColor(Color::Red);
-    m_rs.setPosition(Vector2f(400,550));
+    m_rs.setFillColor(Color::Blue);
+    m_rs.setPosition(Vector2f(350,550));
 }
 Vector2f Bat::getPosition(){
     return m_rs.getPosition();

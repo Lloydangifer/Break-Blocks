@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "include/Bat.hpp"
+#include "include/Ball.hpp"
 
 using namespace std;
 using namespace sf;
@@ -7,6 +8,7 @@ using namespace sf;
 int main(){
     RenderWindow main(VideoMode(800, 600), "Break::Blocks",Style::Fullscreen); //Create the main window
     Bat bat;
+    Ball ball;
     while(main.isOpen()){ //Start the game loop
         Event event;
         while(main.pollEvent(event)){ //Process events
@@ -29,6 +31,7 @@ int main(){
         main.clear(Color::White);
         //Draw the window
         main.draw(bat.getForm());
+        main.draw(ball.getForm());
         //Update the window
         bat.update();
         main.display();
