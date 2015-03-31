@@ -1,10 +1,10 @@
 #ifndef BRICK_HPP
 #define BRICK_HPP
 
-class brick{
+class Brick{
     public:
-        brick();
-        virtual ~brick();
+        Brick();
+        virtual ~Brick();
     protected:
     private:
 };
