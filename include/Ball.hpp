@@ -19,6 +19,8 @@ class Ball{
         void update();
         bool ScreenWidthCollision();
         bool ScreenHeightCollision();
+        void HeightCollision();
+        void WidthCollision();
     protected:
         CircleShape m_cs;
         Vector2f m_direction;

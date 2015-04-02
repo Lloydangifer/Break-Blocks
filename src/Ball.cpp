@@ -23,13 +23,11 @@ CircleShape Ball::getForm(){
     return this->m_cs;
 }
 void Ball::update(){
-    if(ScreenWidthCollision() || ScreenHeightCollision()){
-        //int dir_x=(int)((rand()%2)-1);
-        //int dir_y=(int)((rand()%2)-1);
-        //this->setDirection(Vector2f(dir_x*5,dir_y*5));
-        /*this->m_cs.move(this->m_direction);*/
-        this->setDirection(Vector2f(-this->getDirection().x,-this->getDirection().y));
-
+    if(ScreenWidthCollision()){
+        this->WidthCollision();
+    }
+    if(ScreenHeightCollision()){
+        this->HeightCollision();
     }
     this->m_cs.move(this->m_direction);
 }
@@ -48,6 +46,14 @@ bool Ball::ScreenHeightCollision(){
     else{
         return true;
     }
+}
+void Ball::WidthCollision(){
+    int dir_y=(int)((rand()%2)-1);
+    this->setDirection(Vector2f(-this->getDirection().x,(dir_y*5)));
+}
+void Ball::HeightCollision(){
+    int dir_x=(int)((rand()%2)-1);
+    this->setDirection(Vector2f((dir_x*5),-this->getDirection().y));
 }
 Ball::~Ball(){
     //dtor
