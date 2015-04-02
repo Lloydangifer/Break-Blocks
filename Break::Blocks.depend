@@ -1,30 +1,39 @@
 # depslib dependency file v1.0
-1427838049 source:/home/lloyd/Documents/Projets/Break::Blocks/main.cpp
+1427970306 source:/home/lloyd/Documents/Projets/Break::Blocks/main.cpp
 	<SFML/Graphics.hpp>
 	"include/Bat.hpp"
 	"include/Ball.hpp"
+	"include/Brick.hpp"
+	"include/Global.hpp"
 
-1427837973 source:/home/lloyd/Documents/Projets/Break::Blocks/src/Ball.cpp
+1427993007 source:/home/lloyd/Documents/Projets/Break::Blocks/src/Ball.cpp
 	"../include/Ball.hpp"
 
-1427837963 /home/lloyd/Documents/Projets/Break::Blocks/include/Ball.hpp
+1427992962 /home/lloyd/Documents/Projets/Break::Blocks/include/Ball.hpp
 	<iostream>
 	<SFML/Graphics.hpp>
+	"Global.hpp"
 
-1427838292 source:/home/lloyd/Documents/Projets/Break::Blocks/src/Bat.cpp
+1427970236 source:/home/lloyd/Documents/Projets/Break::Blocks/src/Bat.cpp
 	"../include/Bat.hpp"
 
-1427836688 /home/lloyd/Documents/Projets/Break::Blocks/include/Bat.hpp
+1427968147 /home/lloyd/Documents/Projets/Break::Blocks/include/Bat.hpp
 	<iostream>
 	<SFML/Graphics.hpp>
+	"Global.hpp"
 
 1427796320 source:/home/lloyd/Documents/Projets/Break::Blocks/src/brick.cpp
 	"brick.hpp"
 
 1427796320 /home/lloyd/Documents/Projets/Break::Blocks/include/brick.hpp
 
-1427836227 source:/home/lloyd/Documents/Projets/Break::Blocks/src/Brick.cpp
+1427992316 source:/home/lloyd/Documents/Projets/Break::Blocks/src/Brick.cpp
 	"../include/Brick.hpp"
 
-1427830198 /home/lloyd/Documents/Projets/Break::Blocks/include/Brick.hpp
+1427968147 /home/lloyd/Documents/Projets/Break::Blocks/include/Brick.hpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"Global.hpp"
+
+1427968293 /home/lloyd/Documents/Projets/Break::Blocks/include/Global.hpp
 
